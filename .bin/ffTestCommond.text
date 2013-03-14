@@ -1,0 +1,9 @@
+System.Integration.load({
+					id:'0001',
+					url:'/loadScript',
+					container:'container',
+					namespace:'Test',
+					type:'app',
+					target:'inner',
+					method:'POST'
+				})

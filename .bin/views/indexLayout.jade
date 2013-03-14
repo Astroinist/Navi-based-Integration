@@ -1,0 +1,17 @@
+doctype 5
+html
+head
+	block css
+	link(rel='stylesheet', href='static/stylesheets/layout.css')
+body(id='indexBody')
+	<div id="mainTop">
+	block Top
+	</div>
+	div#mainCenter
+		block center
+	div#mainBottom
+		block bottom
+	script(src='javascripts/jquery-1.9.0.js')
+	script(src='javascripts/integrationCore.js')
+	script(src='javascripts/index.js')
+	block script
