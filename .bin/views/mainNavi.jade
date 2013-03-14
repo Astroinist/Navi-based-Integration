@@ -1,0 +1,68 @@
+doctype 5
+html
+	header
+		link(rel='stylesheet', href='/stylesheets/navi.css')
+		
+	body
+		<div id="display-menu-nav">
+		<span class="left navi-icon"></span>
+		if (menus && (menus.length > 0))
+			<ul id="main-nav" class="navi-icon clearfix">
+			<li class="select" id="home">
+			<span class="split left navi-icon"></span>
+			<span class="home main-icon"></span>
+			<span class="title">首页</span>
+			<span class="split right navi-icon"></span>
+			</li>
+			for m in menus
+				<li class="navigator" data-id="#{m.id}" data-url="#{m.url}" data-container="#{m.contianer}" data-type="app" data-target="#{m.target}">
+				<span class="split left navi-icon"></span>
+				<span class="#{m.class} main-icon"></span>
+				<span class="title">#{m.name}</span>
+				<span class="delete navi-icon" style="display: none"></span>
+				<span class="split right navi-icon"></span>
+				</li>
+			<li style="float: right;" id="config-menu">
+			<span class="split left navi-icon"></span>
+			<span class="main main-icon"></span>
+			<span class="title">主菜单</span>
+			<span class="split right navi-icon"></span>
+			</li>
+			</ul>
+		<span class="right navi-icon"></span>
+		</div>
+		<div style="display: none" id="hidden-menu-box">
+		<div>
+		<p class="header">
+		<span class="title">默认分类</span>
+		<span class="setting navi-icon">自定义</span>
+		<span class="split"></span>
+		<span class="close navi-icon"></span>
+		</p>
+		if (menus && (menus.length > 0))
+			<ul class="clearfix">
+			for m in menus
+				<li data-id="#{m.id}" data-id="#{m.id}" data-url="#{m.url}" data-container="#{m.contianer}" data-type="app" data-target="#{m.target}">
+				<span class="#{m.class} main-icon"></span>
+				<span class="title">#{m.name}</span>
+				<span class="add navi-icon" style="display: none"></span>
+				</li>
+			</ul>
+		</div>
+		
+		<div>
+		if (externalLinks && (externalLinks.length > 0))
+			<p class="outer-header"><span class="title">外部连接</span></p>
+			<ul class="clearfix">
+			for m in externalLinks
+				<li data-id="#{m.id}">
+				<span class="main-icon"></span>
+				<span class="navigator title" data-type="#{m.type}" data-url="#{m.url}">#{m.name}</span>
+				<span class="add navi-icon" style="display: none"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="footer"></div>
+		</div>
+		script(src="javascripts/mainPage/jquery.dragsort.min.js")
+		script(src='javascripts/mainPage/navi.js')

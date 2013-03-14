@@ -1,0 +1,199 @@
+.main-icon {
+	background-image: url(/images/index/tb2.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 38px;
+	display: block;
+	position: absolute;
+	left: 5px;
+	top: -12px;
+}
+#display-menu-nav .delete {
+	background-position: -48px 0;
+	display: block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	z-index: 10;
+}
+#hidden-menu-box .add {
+	background-position: -24px 0;
+	display: block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: -5px;
+	right: -15px;
+}
+#display-menu-nav .main {
+	width: 32px;
+	height: 36px;
+	background: url(/images/index/main-navi2.png) 0 -240px;
+}
+.navi-icon {
+	background-image: url(/images/index/main-navi2.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+#display-menu-nav {
+	position: relative;
+}
+#display-menu-nav .left {
+	background-position: 0 -46px;
+	left: 0;
+	width: 10px;
+	top: 13px;
+	height: 30px;
+	position: absolute;
+}
+#display-menu-nav .right {
+	background-position: 0 -101px;
+	right: 0;
+	width: 10px;
+	top: 13px;
+	height: 30px;
+	position: absolute;
+}
+#main-nav {
+	background-position: 0 -155px;
+	background-repeat: repeat-x;
+	position: absolute;
+	height: 28px;
+	left: 10px;
+	top: 0;
+	right: 10px;
+	bottom: 1px;
+	font-size: 13px;
+	color: #FFFFFF;
+	overflow: visible;
+}
+#main-nav li {
+	float: left;
+	margin: 0 10px;
+	cursor: pointer;
+	height: 28px;
+	line-height: 28px;
+	position: relative;
+}
+#main-nav li a {
+	display: inline-block;
+}
+#main-nav li .title {
+	margin-left: 43px;
+	margin-right: 9px;
+}
+#main-nav li.select {
+	background-position: 0 -410px;
+	background-repeat: no-repeat;
+	background-image: url(/images/index/main-navi2.png);
+}
+#main-nav li.select .split {
+	background-repeat: no-repeat;
+	width: 2px;
+	height: 28px;
+	position: absolute;
+	top: 0;
+	display: block;
+}
+#main-nav li .split.left, #main-nav li .split.right {
+	background-position: 0 0;
+}
+#main-nav li.select .split.left {
+	background-position: 0 -350px;
+	left: 0;
+}
+#main-nav li.select .split.right {
+	background-position: -4px -350px;
+	right: 0;
+}
+#hidden-menu-box {
+	position: absolute;
+	right: 5px;
+	width: 541px;
+	z-index: 10;
+	font-size: 12px;
+}
+#hidden-menu-box li {
+	float: left;
+	margin-right: 10px;
+	height: 40px;
+	margin: 8px 14px;
+	position: relative;
+	cursor: pointer;
+	line-height: 47px;
+}
+#hidden-menu-box li .main-icon {
+	top: 0;
+}
+#hidden-menu-box li .title {
+	margin-left: 43px;
+}
+#hidden-menu-box .header {
+	background: url(/images/index/main-navi-cfg.png) repeat-y 0 0 transparent;
+	height: 34px;
+	background-position: -2px 0;
+	position: relative;
+	margin: 0;
+}
+#hidden-menu-box .outer-header {
+	background: url(/images/index/main-navi-cfg.png) repeat-y 0 0 transparent;
+	height: 34px;
+	background-position: -2px -34px;
+	position: relative;
+	margin: 0;
+}
+#hidden-menu-box .header .title, #hidden-menu-box .outer-header .title {
+	position: absolute;
+	left: 20px;
+	top: 14px;
+}
+#hidden-menu-box .header .setting {
+	cursor: pointer;
+	position: absolute;
+	display: block;
+	line-height: 20px;
+	right: 48px;
+	top: 6px;
+	height: 20px;
+	padding-left: 18px;
+	background-position: -72px -18px;
+}
+#hidden-menu-box .header .setting.select {
+	background-position: -72px 1px;
+	color: #109fe0;
+}
+#hidden-menu-box .header .split { 
+	position: absolute;
+	display: block;
+	height: 11px;
+	cursor: pointer;
+	width: 1px;
+	top: 10px;
+	right: 37px;
+	border-left: 1px solid #BBBBBB;
+}
+#hidden-menu-box .header .close {
+	cursor: pointer;
+	position: absolute;
+	display: block;
+	line-height: 20px;
+	right: 6px;
+	top: 6px;
+	height: 20px;
+	width: 20px;
+	background-position: -79px -119px;
+}
+#hidden-menu-box ul {
+	background: url(/images/index/main-navi-cfg.png) repeat-y 0 0 transparent;
+	background-position: -545px 0;
+	overflow: hidden;
+	margin: 0;
+}
+#hidden-menu-box .footer {
+	background: url(/images/index/main-navi-cfg.png) repeat-y 0 0 transparent;
+	height: 6px;
+	background-position: -2px -68px;
+}

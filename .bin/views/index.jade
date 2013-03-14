@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	div(id = 'container')
+	ul
+		li(class="navigator",data-id="001",data-url="loadScript",data-container="container") LoadScript
+		li(class="navigator",data-id="002",data-url="users",data-container="container",data-target = "newWin") LoadResponse
+		li(class="navigator",data-id="003",data-url="users",data-container="container",data-type = "data") LoadData
+block script
+	script(src='socket.io/socket.io.js')
+	script(src='javascripts/jquery-1.9.0.js')
+	script(src='javascripts/integrationCore.js')

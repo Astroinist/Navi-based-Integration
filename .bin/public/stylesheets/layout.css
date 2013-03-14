@@ -1,0 +1,41 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+#mainTop{
+	height:10%;
+	width: 100%;
+	overflow: hidden;
+}
+#mainCenter{
+	height:80%;
+	width: 100%;
+	overflow: hidden;
+}
+#mainBottom{
+	height: 10%;
+	width: 100%;
+	overflow: hidden;
+}
+#home-box{
+	margin: 10px 20px;
+}
+#home-box > div{
+	width: 100%;
+	height: 50%
+}
+#home-box .bottom{
+	margin: 10px 0 0 0;
+}
+.clearfix>div{
+	float: left;
+	height: 100%;
+}
+.clearfix>.main{
+	width: 320px;
+}
+#top-center,#bottom-center{
+	margin: 0 10px;
+}
